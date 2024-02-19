@@ -1,4 +1,3 @@
-// Fetch comments from the server and render them
 async function fetchComments() {
     try {
         const response = await axios.get('https://65cdf5d1c715428e8b3f9540.mockapi.io/comments/essex');
@@ -8,8 +7,6 @@ async function fetchComments() {
         console.error('Error fetching comments:', error);
     }
 }
-
-// Render comments on the webpage
 function renderComments(comments) {
     const commentsContainer = document.getElementById('commentsContainer');
     commentsContainer.innerHTML = '';
@@ -25,7 +22,6 @@ function renderComments(comments) {
     });
 }
 
-// Add a new comment
 async function addComment(userName, commentText) {
     try {
         const response = await axios.post('https://65cdf5d1c715428e8b3f9540.mockapi.io/comments/essex', { userName, commentText });
@@ -36,7 +32,6 @@ async function addComment(userName, commentText) {
     }
 }
 
-// Edit an existing comment
 async function editComment(commentId, userName, commentText) {
     const newCommentText = prompt('Enter new comment:', commentText);
     if (!newCommentText) return; // If user cancels, exit function
@@ -49,7 +44,6 @@ async function editComment(commentId, userName, commentText) {
     }
 }
 
-// Delete a comment
 async function deleteComment(commentId) {
     try {
         await axios.delete(`https://65cdf5d1c715428e8b3f9540.mockapi.io/comments/essex/${commentId}`);
@@ -60,7 +54,6 @@ async function deleteComment(commentId) {
     }
 }
 
-// Event listener for comment form submission
 document.getElementById('commentForm').addEventListener('submit', function (event) {
     event.preventDefault();
     const userName = document.getElementById('userName').value;
@@ -68,6 +61,5 @@ document.getElementById('commentForm').addEventListener('submit', function (even
     addComment(userName, commentText);
 });
 
-// Load comments when the page loads
 fetchComments(); 
-// Fetch comments from the server and render them
+

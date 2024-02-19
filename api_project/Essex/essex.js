@@ -25,20 +25,16 @@ async function loadDataFromApi() {
         console.error('Error getting data from api', error);
         return Promise.reject(error);
     }
-
 }
-
 
 function changeBackgroundColor(shipName) {
     let bgclass = document.querySelector('.cv-box');
-
     if (shipName === 'Essex') {
         bgclass.style.background = 'linear-gradient(245.59deg, #feca83 0%, #d79e8b 28.53%, #829dbf 75.52%)';
     } else {
         bgclass.style.background = 'linear-gradient(245.59deg, #776168 0%, #3a4062 28.53%, #152149 75.52%)';
     }
 }
-
 
 function addToFavorites(shipName) {
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -54,8 +50,6 @@ function addToFavorites(shipName) {
     }
 }
 
-
-
 function updateFavoritesButton(isAlreadyFavorite) {
     const addToFavoritesButton = document.getElementById('addToFavorites');
     if (isAlreadyFavorite) {
@@ -65,13 +59,11 @@ function updateFavoritesButton(isAlreadyFavorite) {
     }
 }
 
-
 document.getElementById('addToFavorites').addEventListener('click', async function () {
     await loadDataFromApi();
     const shipNameForFavorites = shipName; 
     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
     const isAlreadyFavorite = favorites.some((ship) => ship.name === shipNameForFavorites);
-
     addToFavorites(shipNameForFavorites, isAlreadyFavorite);
     updateFavoritesButton(!isAlreadyFavorite);
     checkIfInFavorites(shipNameForFavorites);
