@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+.news-page {
+	padding: 50px 40px;
+	background-color: #E5E5E5;
+	height: 100vh;
+}
+
+.news-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.news-header-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-header-btn-image {
+	margin-right: 30px;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+
+.news-header-btn {
+	font-size: 18px;
+	color: #000;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	font-weight: 600;
+	transition: all 0.3s ease-in;
+}
+
+.news-header-btn:hover {
+	color: blue;
+	transform: scale(1.4);
+}
+
+.news-header-btn:not(:last-child) {
+	margin-right: 30px;
+}
+
+.news-content {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 80px;
+}
+
+.news-block {
+	width: 29.7%;
+	padding: 15px 15px 12px 15px;
+	background-color: white;
+	border-radius: 19px;
+	transition: all 0.3s ease-in;
+}
+
+.news-block:hover {
+	transform: scale(1.05);
+	box-shadow: 2px 2px 25px #000;
+}
+
+.news-block:not(:last-child) {
+	margin-right: 15px;
+}
+
+.news-block-header {
+	display: flex;
+	align-items: start;
+	justify-content: space-between;
+	margin-bottom: 28px;
+}
+
+.news-block-header-wrap {
+	display: flex;
+}
+
+.news-block-author-wrap {
+	margin-left: 10px;
+}
+
+.news-block-author {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.news-block-date {
+	font-size: 12px;
+}
+
+.news-block-more {
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+}
+
+.news-block-title {
+	margin-bottom: 13px;
+	font-size: 23px;
+	transition: all 0.3s ease-in;
+}
+
+.news-block-title:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+.news-block-image {
+	width: 100%;
+}
+
+.news-block-feedback-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 12px;
+}
+
+.news-block-reactions-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.news-block-reactions-wrap:not(:last-child) {
+	margin-right: 10px;
+}
+
+.news-block-reactions-text {
+	margin-left: 10px;
+	font-size: 15px;
+	line-height: normal;
+	margin-top: 5px;
+}

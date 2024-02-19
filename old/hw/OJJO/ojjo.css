@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Noto+Serif:wght@700&display=swap');
+* {
+    margin: 0;
+}
+body {
+    background-color: white;
+    
+}
+.first-page {
+    background-image:url(./img/bgc.png);
+    min-width: 1920px;
+    min-height: 950px;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+    font-size: 14px;
+    line-height: 150%;
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #fff
+}
+.nav-links {
+    list-style: none;
+}
+.shrink {
+    width: 18px;
+    height: 24px;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0 40px;
+}
+.nav-links li {
+    transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+    color: rgb(54, 182, 182);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1920px;
+    min-height: 950px;
+}
+.center-text {
+    font-family: Noto Serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+    margin-bottom: 50px;
+}
+.center-text-2 {
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--white, #FFF);
+    background: var(--accent, #333);
+    margin-bottom: 80px;
+}
+.horizontal-line {
+    width: 1920px;
+    height: 1px;
+    background-color: #FFF;
+}
+.bottom-line {
+    display: flex;
+    margin: 30px 0 30px 0;
+}
+.vertical-line {
+    width: 1px;
+    height: 60px; 
+    background-color: #fff;
+    margin: 0 15px; 
+}
+.second-page {
+    min-width: 1920px;
+    height: auto;
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1920px;
+    justify-content: center;
+}
+.main-container2 {
+    width: 58%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 100px 0 100px 0;
+}
+.text-1 {
+    color: var(--accent, #333);
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.text-2 {
+    color: var(--accent, #333);
+    font-family: Noto Serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+.catalogue {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.catalogue-button {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--accent, #333);
+    width: 165px;
+    height: 55px;
+    position: relative;
+    }
+.catalogue-button:not(:last-child) {
+    margin-right: 24px;
+}
+.catalogue-button::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -6;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+.catalogue-button:hover::before {
+    transform: translate(5px, 5px);
+}
+.catalogue-button:active {
+    background-color: #333;
+    color: #FFF;
+}
+.listed-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    min-width: 1110px;
+}
+.listed-items-button1 {
+    background-image: url(./img/Rings.png);
+    margin-bottom: 30px;
+}
+.listed-items-button2 {
+    background-image: url(./img/Earrings.png);
+    margin-bottom: 30px;
+}
+.listed-items-button3 {
+    background-image: url(./img/Necklace.png);
+    margin-bottom: 30px;
+}
+.listed-items-button4 {
+    background-image: url(./img/Cufflinks.png);
+}
+.listed-items-button5 {
+    background-image: url(./img/Bracelets.png);
+}
+.listed-items-button6 {
+    background-image: url(./img/Watches.png);
+}
+.items {
+    border: 1px;
+    width: 350px;
+    height: 280px;
+    color: black;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.third-page {
+    background-image: url(./img/bg3.png);
+    min-width: 1920px;
+    min-height: 541px;
+}
+.page3-text1 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 15px;
+}
+.page3-text2 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Noto Serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 45px;
+}
+.page3-text3 {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 75px;
+}
+.page3-button {
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--accent, #333);
+    background: var(--white, #FFF);
+    color: var(--accent, #333);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+.page3-button:active {
+    background-color: #333;
+    color: #FFF;
+}
+.btn-tips {
+    background-color: transparent; 
+    color: #fff; /* Text color */
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    }
+.btn1 {
+    background-image: url(./img/btn-tips1.png);
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+    width: 31%;
+
+}
+.btn2 {
+    background-image: url(./img/btn-tips2.png);
+    height: 370px;
+    width: 31%;
+
+}
+.btn3 {
+    background-image: url(./img/btn-tips3.png);
+    height: 370px;
+    width: 31%;
+
+}
+.btn-bottom {
+    display: inline-flex;
+    padding: 15px 35px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--white, #FFF);
+    background: var(--accent, #333);
+    margin-top: 60px;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+.btn-bottom:active {
+    background-color: #adadad;
+    color: #333;
+}
+.social-network-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-width: 1110px;
+    position: relative;
+}
+.play-button1 {
+    position: absolute;
+    left: 22%;
+    top: 19%;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.play-button2 {
+    position: absolute;
+    right: 21%;
+    bottom: 19%;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+}
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter-list {
+    list-style: none;
+    padding: 0;
+}
+.newsletter-list li {
+    background: url(./img/subscribe__icon.svg) no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+.newsletter-right-part {
+    border: 1px solid var(--white, #FFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 15px;
+    margin-left: 120px;
+}
+.submission-form {
+    background: var(--white, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    padding: 20px 22px;
+}
+.input {
+    color: rgba(51, 51, 51, 0.50);
+    width: 200px;
+    height: 45px;
+    padding-left: 20px;
+}
+.submit-btn {
+    border: 1px solid var(--white, #FFF);
+    background: var(--accent, #333);
+    height: auto;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    gap: 10px;
+}
+.submit-btn:active {
+    background-color: #adadad;
+    color: black;
+}
+.footer-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    min-width: 100%;
+    color: var(--accent, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 60px;
+}
+.text-topic {
+    color: var(--accent, #333);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+.underline {
+    height: 1px;
+    background: #333;
+    margin: 10px 0 30px 0;
+}
+.useful-links-items {
+    list-style: none;
+    padding: 0;
+}
+.useful-links-items li {
+    color: var(--accent, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.useful-links-items li:last-child {
+    margin-bottom: 0px;
+}
+.columns {
+    width: 31%;
+    margin-right: 30px;
+}
+.columns:last-child {
+    margin-right: 0px;
+}
+.payment-img {
+    width: 45px;
+    height: 30px;
+    margin-top: 21px;
+}
+.payment-img:last-child {
+    margin-left: 20px;
+}
+.contacts {
+    list-style: none;
+    padding: 0;
+}
+.contacts li {
+    background: url(./img/entypo_old-phone.svg) no-repeat left center;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: var(--accent, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.contacts li:last-child {
+    background: url(./img/entypo_mail.svg) no-repeat left center;
+}
+.media-icons {
+    margin: 22px 20px 0 0;
+}
+.img-icons {
+    display: flex;
+}
+.underline2 {
+    height: 1px;
+    background: #333;
+    width: 100%;
+}
+.footer-bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    color: var(--accent, #333);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.footer-bottom p:last-child {
+    font-weight: 600;
+    text-decoration-line: underline;
+}

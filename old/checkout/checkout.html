@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-window">
+            <div class="checkout-window__head">
+                <h3 class="checkout-window__head--text">Checkout</h3>
+                <div class="checkout-window__head--button">
+                    <button class="checkout-window__head--button__xmark"><img src="./img/Line.svg" alt="xmark"></button>
+                </div>
+            </div>
+            <div class="checkout-window__purchase-info">
+                <p class="text">You are about to purchase <span class="text bold">C O I N Z</span> from <span class="text bold">UI8</span></p>
+            </div>
+            <div class="checkout-window__payment">
+                <div class="checkout-window__payment--item-price">
+                    <p class="text bold">0.007</p>
+                    <p class="text bold">ETH</p>
+                </div>
+                <div class="checkout-window__payment--divider"></div>
+                <div class="checkout-window__payment--balance">
+                    <p class="text payment-info">Your balance</p>
+                    <p class="text bold">8.498</p>
+                </div>
+                <div class="checkout-window__payment--service-fee">
+                    <p class="text payment-info">Service fee</p>
+                    <p class="text bold">0 ETH</p>
+                </div>
+                <div class="checkout-window__payment--summary">
+                    <p class="text payment-info">You will pay</p>
+                    <p class="text bold">0.007 ETH</p>
+                </div>
+            </div>
+            <div class="checkout-window__creator-verification">
+                <img src="./img/Warning.svg" alt="warning">
+                <div class="checkout-window__creator-verification--text">
+                    <p class="text bold warning">This creator is not verified</p>
+                    <p class="text warning">Purchase this item at your own risk</p>
+                </div>
+            </div>
+            <div class="checkout-window__buttons">
+                <button class="checkout-window__buttons--continue">I understand, continue</button>
+                <button class="checkout-window__buttons--cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

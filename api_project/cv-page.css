@@ -1,0 +1,119 @@
+.cv-box {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #776168 0%, #3a4062 28.53%, #152149 75.52%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 5%;
+    gap: 20px;
+}
+.cv-img {
+    width: 450px;
+}
+.submenu-text {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+.submenu-box h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+.submenu-box p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+.submenu-item {
+    color: white;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 10px;
+}
+.cv-right-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 100px;
+}
+#model-1 {
+    width: 500px;
+    height: auto;
+}
+#model-2 {
+    width: 500px;
+    height: auto;
+}
+#model-3 {
+    width: 500px;
+    height: auto;
+}
+.desk-txt {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 40px;
+}
+#fav-check {
+    width: 40px;
+    height: auto;
+}
+.fav-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+#commentForm input,
+#commentForm textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#commentForm button:hover {
+    transform: translateY(4px);
+} 
+.comment-section {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+.cmt-btn {
+    display: inline-block;
+    color: white;
+    background: #3a4062;
+    border: 1px solid transparent;
+    padding: 6px 16px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.cmt-btn:hover {
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+.cmt-mrgn {
+    margin-bottom: 6px;
+}
+.cmt-div {
+    margin-bottom: 8px;
+}

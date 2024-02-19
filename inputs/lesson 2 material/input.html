@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Input</title>
+	<style>
+		label {
+			width: 300px;
+		}
+
+		label::after {
+			content: '';
+			display: inline-block;
+			width: 16px;
+			height: 16px;
+			border: 1px solid black;
+		}
+
+		input:checked ~ label::after {
+			background-color: blue;
+		}
+
+		input {
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<div style="display: flex; flex-direction: column;">
+		
+		<input id="bread" class="checkbox" type="checkbox" value="bread">
+		<label for="bread">
+			Хлеб
+		</label>
+		<label>
+			Молоко
+			<input class="checkbox" type="checkbox" value="milk">
+		</label>
+		<label>
+			Банан
+			<input class="checkbox" type="checkbox" value="banan">
+		</label>
+
+		<div>
+			<p>Мой список покупок:</p>
+			<div class="list"></div>
+		</div>
+	</div>
+	<div style="display: flex; flex-direction: column;">
+		<label>
+			Playstation
+			<input class="radio" name="gift" type="radio" value="Playstation">
+		</label>
+		<label>
+			Macbook
+			<input class="radio" name="gift" type="radio" value="Macbook">
+		</label>
+		<label>
+			Xbox
+			<input class="radio" name="gift" type="radio" value="Xbox">
+		</label>
+
+		<div>
+			<p>Мой подарок:</p>
+			<p class="gift"></p>
+		</div>
+
+	</div>
+	<script src="./input.js"></script>
+</body>
+</html>

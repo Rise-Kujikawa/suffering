@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essex</title>
+    <link rel="stylesheet" href="/api_project/style.css">
+    <link rel="stylesheet" href="/api_project/cv-page.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600;9..40,700&family=Permanent+Marker&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/api_project/index.html" class="logo">CV - Carrier Vessel</a>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="Favorites.html">Favorites</a></li>
+            <li><a href="https://blog.worldofwarships.com/">DevBlog</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <section class="cv-box">
+        <div class="cv-img">
+            <img class="cv-img-clean" src="/api_project/Essex/img/Essex-clean.png">
+            <div class="submenu-box stat-button">
+                <h4>Survivability</h4>
+                <div class="submenu" id="submenuManeuver">
+                    <div class="submenu-item" id="hitpoints">
+                    </div>
+                    <div class="submenu-item" id="torp_dmg_red">
+                    </div>
+                </div>
+            </div>
+            <div class="submenu-box stat-button">
+                <h4>Aircraft</h4>
+                <div class="submenu" id="submenuManeuver">
+                    <div class="submenu-item" id="aa_planes">
+                    </div>
+                    <div class="submenu-item" id="tb_planes">
+                    </div>
+                    <div class="submenu-item" id="b_planes">
+                    </div>
+                </div>
+            </div>
+            <div class="submenu-box stat-button">
+                <h4>Artillery</h4>
+                <div class="submenu" id="submenuManeuver">
+                    <div class="submenu-item" id="artillery">
+                    </div>
+                </div>
+            </div>
+            <div class="submenu-box stat-button">
+                <h4>AA Defense</h4>
+                <div class="submenu" id="submenuAA">
+                    <div class="submenu-item" id="continuousDmg">
+                    </div>
+                    <div class="submenu-item" id="shellExpDmg">
+                    </div>
+                    <div class="submenu-item" id="prioritySector">
+                    </div>
+                </div>
+            </div>
+            <div class="submenu-box stat-button">
+                <h4>Maneuverability</h4>
+                <div class="submenu" id="submenuManeuver">
+                    <div class="submenu-item" id="maxSpeed">
+                    </div>
+                    <div class="submenu-item" id="turnRadius">
+                    </div>
+                    <div class="submenu-item" id="rudderTime">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="fav-div">
+                <button class="fav-btn" id="addToFavorites">Add to Favorites</button>
+                <img id="fav-check" src="" alt="">
+            </div>
+            <p class="desk-txt" id="desc1"></p>
+            <p class="desk-txt" id="desc2"></p>
+            <p class="desk-txt" id="desc3"></p>
+            <div class="comment-section">
+                <p>Leave a comment</p>
+                <form id="commentForm">
+                    <input type="text" id="userName" placeholder="Enter your name" required>
+                    <textarea id="commentText" placeholder="Write your comment" required></textarea>
+                    <button class="fav-btn" type="submit">Submit</button>
+                </form>
+                
+                <div id="commentsContainer">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="cv-right-block">
+            <img src="https://wows-ops-media.wgcdn.co/armory/images/130_Essex_eventum_1_Ship_gallery_01.0b3db095488d425af2f03d5ee1e45d34.jpg" id="model-1">
+            <img src="https://wows-ops-media.wgcdn.co/armory/images/130_Essex_eventum_1_Ship_gallery_02.670a83554f7e879d4863fbec9d0f2b54.jpg" id="model-2">
+            <img src="https://wows-ops-media.wgcdn.co/armory/images/130_Essex_eventum_1_Ship_gallery_03.18f6c809db2033443ceb8a3f75ccf6df.jpg" id="model-3">
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/api_project/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./essex.js"></script>
+    <script src="./comments_essex.js"></script>
+</body>
+</html>
