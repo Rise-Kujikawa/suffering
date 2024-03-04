@@ -1,0 +1,30 @@
+@media all and (max-width: 1000px) {
+    .checkout-window {
+        width: 40%;
+    }
+}
+@media all and (max-width: 900px) {
+    .checkout-window {
+        width: 50%;
+    }
+}
+@media all and (max-width: 720px) {
+    .checkout-window {
+        width: 55%;
+    }
+}
+@media all and (max-width: 600px) {
+    .checkout-window {
+        width: 60%;
+    }
+}
+@media all and (max-width: 550px) {
+    .checkout-window {
+        width: 70%;
+    }
+}
+@media all and (max-width: 400px) {
+    .checkout-window {
+        width: 75%;
+    }
+}

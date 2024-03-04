@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #1f2427;
+    font-family: 'DM Sans', sans-serif;
+    color: #FFF;
+}
+.container {
+    margin: 0px auto;
+    max-width: 1300px;
+}
+.block {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    border-radius: 32px;
+    background: #000;
+    height: 387px;
+    padding: 60px 60px 0px 60px;
+    position: relative;
+    max-width: 1300px;
+}
+.text-block {
+    margin-bottom: 60px;
+}
+.upper-text {
+    color: #118DA8;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+.middle-text {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 79.2px; 
+    letter-spacing: 2.88px;
+}
+.submission-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.form {
+    width: 522px;
+    height: 82px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #191919;
+    background: #191919;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.70);
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28.8px;
+    padding-left: 20px;
+}
+.submit-btn {
+    width: 87px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #118DA8;
+    border: 0px;
+}
+.move-img {
+    position:absolute;
+    left: -35px;
+    bottom: -30px;
+}
+.table {
+    margin: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cell {
+    width: 420px;
+    padding-bottom: 51px;
+    border-radius: 32px;
+    background: #000;
+    margin-bottom: 16px;
+}
+.stars {
+    display: flex;
+    margin: 54px 0 21px 50px;
+}
+.star {
+    margin-right: 5px;
+}
+.cell-comment {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43.2px;
+    margin-bottom: 19px;
+}
+.cell-text {
+    margin-left: 50px;
+}
+.cell-author {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    margin-left: 50px;
+}
